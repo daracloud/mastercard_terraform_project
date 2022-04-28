@@ -49,3 +49,6 @@ One VPC was created with one subnet
 Security Group for the web-server was created to allow HTTP connections to the instance
 An Elastic Load Balancer was created in front of the EC2 instances with it's own Security Group, so we could make traffic rules more restrictive later if we want to.
 An autoscalling group was created for traffic management
+
+## Auto scaling policies
+In order to add dynamism to the infrastructure, I created several # Auto Scaling Policies and # CloudWatch Alarms.
