@@ -54,7 +54,7 @@ An autoscalling group was created for traffic management
 In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
 
 ## 
-## aws_autoscaling_policy defines how AWS should change Auto Scaling Group instances count in case of aws_cloudwatch_metric_alarm.
+*aws_autoscaling_policy defines how AWS should change Auto Scaling Group instances count in case of aws_cloudwatch_metric_alarm.
 
 *cooldown option* is needed to give our infrastructure some time (300 seconds) before increasing Auto Scaling Group again.
 
