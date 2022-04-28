@@ -60,6 +60,9 @@ An autoscalling group was created to automatically add and remove nodes based on
 ## Auto scaling policies
 In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
 
+## Entry Script
+An entry script was configured to initialize docker & nginx configuration
+
 *aws_autoscaling_policy* defines how AWS should change Auto Scaling Group instances count in case of aws_cloudwatch_metric_alarm.
 
 *cooldown option* is needed to give our infrastructure some time (300 seconds) before increasing Auto Scaling Group again.
