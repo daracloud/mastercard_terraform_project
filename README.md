@@ -51,4 +51,4 @@ An Elastic Load Balancer was created in front of the EC2 instances with it's own
 An autoscalling group was created for traffic management
 
 ## Auto scaling policies
-In order to add dynamism to the infrastructure, I created several # Auto Scaling Policies and # CloudWatch Alarms.
+In order to add dynamism to the infrastructure, I created several ## Auto Scaling Policies and ## CloudWatch Alarms.
