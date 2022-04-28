@@ -58,7 +58,7 @@ An Elastic Load Balancer was created in front of the EC2 instances with it's own
 An autoscalling group was created to automatically add and remove nodes based on load
 
 ## Entry Script
-An entry script was configured to initialize docker & nginx configuration
+A launch configuration file was created to initialize docker & nginx configuration
 
 ## Auto scaling policies
 In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
