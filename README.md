@@ -51,4 +51,11 @@ An Elastic Load Balancer was created in front of the EC2 instances with it's own
 An autoscalling group was created for traffic management
 
 ## Auto scaling policies
-In order to add dynamism to the infrastructure, I created several ## Auto Scaling Policies and ## CloudWatch Alarms.
+In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
+
+## 
+## aws_autoscaling_policy defines how AWS should change Auto Scaling Group instances count in case of aws_cloudwatch_metric_alarm.
+
+*cooldown option* is needed to give our infrastructure some time (300 seconds) before increasing Auto Scaling Group again.
+
+*aws_cloudwatch_metric_alarm* is a straightforward alarm, which will be fired, if the total CPU utilization of all instances in our Auto Scaling Group is greater or equal threshold (60% CPU utilization) during 120 seconds.
