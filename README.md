@@ -57,11 +57,11 @@ An Elastic Load Balancer was created in front of the EC2 instances with it's own
 ## Autoscaling group
 An autoscalling group was created to automatically add and remove nodes based on load
 
-## Auto scaling policies
-In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
-
 ## Entry Script
 An entry script was configured to initialize docker & nginx configuration
+
+## Auto scaling policies
+In order to add dynamism to the infrastructure, I created several Auto Scaling Policies and CloudWatch Alarms.
 
 *aws_autoscaling_policy* defines how AWS should change Auto Scaling Group instances count in case of aws_cloudwatch_metric_alarm.
 
