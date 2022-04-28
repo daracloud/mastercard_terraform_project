@@ -45,9 +45,16 @@ terraform destroy -target aws_vpc.myapp-vpc
     terraform state show aws_vpc.myapp-vpc    
 
 ## Steps taken
+## VPC
 One VPC was created with one subnet
+
+## Security Group
 Security Group for the web-server was created to allow HTTP connections to the instance
+
+## Elastic Load Balancer
 An Elastic Load Balancer was created in front of the EC2 instances with it's own Security Group, so we could make traffic rules more restrictive later if we want to.
+
+## Autoscaling group
 An autoscalling group was created for traffic management
 
 ## Auto scaling policies
