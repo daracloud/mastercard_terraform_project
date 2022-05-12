@@ -25,3 +25,4 @@ variable region {
 
 variable public_key_location {
     default = "/home/user/.ssh/id_rsa.pub"
+}
